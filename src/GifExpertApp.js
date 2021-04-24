@@ -10,7 +10,7 @@ export const GifExpertApp = () => {
 
     return (
         <div className="container">
-            <h2 className="title">Gif Expert App</h2>
+            <h2 className="title">Giphy Power</h2>
             <AddCategory setCategories={setCategories} />
             <hr />
 

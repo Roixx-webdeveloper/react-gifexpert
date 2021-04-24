@@ -6,16 +6,89 @@ body{
   padding: 60px;
 }
 
-input{
-  color: gray;
-  font-size: 1.3rem;
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contenido_principal{
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
+}
+
+
+.title{
+  text-align: center;
+}
+
+.formulario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.enviar{
+  display: flex;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 70%;
+  justify-self: center;
+  height: auto;
+}
+.enviar:hover{
+  background-color: #147c17;
+  transition: 0.3s ease-in-out;
+}
+input[type=text] {
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  border: 1px solid #02548b;
+  transition: width 3s ease-in-out;
+  align-self: center;
+}
+
+
+.cards{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards h3{
+  text-align: center;
 }
 
 .card-grid{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+
+@media screen and (min-width:480px){
+  .contenido_principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .card{
+    flex: 0 1 calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width:768px){
+  .card{
+    flex: 0 1 calc(33% - 1rem);
+  }
 }
 
 .card{
@@ -33,6 +106,8 @@ input{
 }
 
 .card img{
-  max-height: 170px;
+  height: 300px;
+  width: 100%;
+  justify-self: center;
 }
 

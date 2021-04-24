@@ -20,14 +20,16 @@ export const AddCategory = ({ setCategories }) => {
 
     return (
         <form
+            className="formulario"
             onSubmit={handleSubmit}
         >
             <input
                 type="text"
+                className="texto"
                 value={inputValue}
                 onChange={handleInputChange}
             />
-            <input type="submit" value="Enviar" />
+            <input className="enviar" type="submit" value="Enviar" />
         </form>
     )
 }
